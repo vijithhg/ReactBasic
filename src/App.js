@@ -1,10 +1,10 @@
-import Counter from "./components/Counter";
+import UseEffectTest from "./components/useEffectTest";
 
 
 const App = ()=>{
   return(
     <>
-      <Counter/>
+      <UseEffectTest/>
     </>
   )
 }
