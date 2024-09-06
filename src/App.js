@@ -1,10 +1,15 @@
-import UseEffectTest from "./components/useEffectTest";
+import Fetch from "./components/Fetch";
+import TodoList from "./components/Todo";
+import User from "./components/User";
+
 
 
 const App = ()=>{
   return(
     <>
-      <UseEffectTest/>
+      {/* <User/> */}
+      {/* <Fetch/>   */}
+      <TodoList/>
     </>
   )
 }
