@@ -3,9 +3,10 @@ import { BrowserRouter, Route, Routes, } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Home from './components/Home';
-import About from './components/About';
+import { Toaster } from 'react-hot-toast';
+import TableData from './components/TableData';
 import Gallery from './components/Gallery';
-import NavbarPage from './components/Navbar';
+
 
 
 const App = ()=>{
@@ -13,13 +14,14 @@ const App = ()=>{
     <>
     
     <BrowserRouter>
-    <NavbarPage/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>} />
+        <Route path='/table' element={<TableData/>}/>
         <Route path='/gallery' element={<Gallery/>} />
       </Routes>
     </BrowserRouter>
+    <Toaster position='bottom-center' />
+
     </>
   )
 }
