@@ -4,8 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Home from './components/Home';
 import { Toaster } from 'react-hot-toast';
-import TableData from './components/TableData';
-import Gallery from './components/Gallery';
+import BgChange from './components/BgChange';
+import ComponentToggle from './components/ComponentToggle';
+
 
 
 
@@ -15,9 +16,7 @@ const App = ()=>{
     
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/table' element={<TableData/>}/>
-        <Route path='/gallery' element={<Gallery/>} />
+        <Route path='/' element={<ComponentToggle/>}/>
       </Routes>
     </BrowserRouter>
     <Toaster position='bottom-center' />
